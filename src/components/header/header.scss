@@ -1,0 +1,42 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem;
+  z-index: 10;
+  background-image: linear-gradient(to bottom, #0a0a0c, rgba(0, 0, 0, 0));
+ 
+
+  .logo{
+    width: 15rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    top:1.2rem;
+    left: 1rem;
+
+    &-line{
+      width: 3px;
+      height: 2.1rem;
+      background-color:crimson;
+      margin: 0 .5rem;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+   }
+
+   &-title{
+     font-size: 1.7rem;
+     letter-spacing: 1px;
+   }
+
+  }
+
+  
+
+}

@@ -1,0 +1,13 @@
+.portfolio-container{
+  margin: 5rem .7rem 2rem .7rem;
+  display: grid;
+  -webkit-grid-template-columns: repeat(auto-fill, minmax(20rem
+  , 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem
+  , 1fr));
+  grid-gap: .7rem;
+
+  // .responsive:nth-child(even) {
+  //   height: 40vh;   
+  // }
+}

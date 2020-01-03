@@ -1,0 +1,43 @@
+.burger-container{
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top:1.2rem;
+  right: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all .3s;
+  background-color:transparent;
+  outline: none;
+  border: none;
+
+  .burger-line1,.burger-line2, .burger-line3{
+    width: 1.9rem;
+    height: 1.3px;
+    background-color:white;
+    transition: transform .5s;
+    transform: rotate(0deg);
+    transform-origin: top right;
+  }
+}
+
+.active{
+  
+  .burger-line1{
+    transform: rotate(-44deg);
+    transform-origin: top right;
+  }
+
+  .burger-line2{
+    transform: translate(-1.5rem);
+    opacity: 0;
+  }
+
+  .burger-line3{
+    transform: rotate(44deg);
+    transform-origin: bottom right;
+  }
+}
