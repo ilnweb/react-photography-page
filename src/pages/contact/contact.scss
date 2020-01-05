@@ -1,0 +1,44 @@
+.contact{
+  padding: 7rem;
+  flex-direction: column;
+  position: relative;
+  
+
+  &-title{
+   margin: 1rem;
+    font-weight: 700;
+  }
+
+  &-form{
+    flex-direction: column;
+    width: 50%;
+    background-image: linear-gradient(to right bottom, #0a0a0cac, #0a0a0c39);
+    padding: 2rem;
+  }
+
+  &-button{
+    margin-top: 3rem;
+    background-color:#0a0a0c;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    border-radius:3px;
+    font-family: inherit;
+    border: none;
+  }
+
+  &-backround{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1577365301/Travel/WEB-77_mwl7op.jpg");
+    background-size: cover;
+    background-position: center;
+    // filter: grayscale(1);
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+}

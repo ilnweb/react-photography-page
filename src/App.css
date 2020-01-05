@@ -16,7 +16,23 @@ body{
   background-color:#191a1d;
   scroll-behavior:smooth;
   color:white;
-  font-family: "Exo" , sans-serif;
+  font-family: "Bowlby" , sans-serif;
   font-weight: 300;
   box-sizing: border-box;
 }
+
+h1{
+  font-size: 5rem;
+
+}
+
+h2{
+  font-size: 1.7rem;
+}
+
+.flex-c{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+

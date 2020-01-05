@@ -42,8 +42,10 @@ class PortfolioPage extends React.Component {
 			};
 			this.setState((state) => {
 				state.items.push(imageData);
-			});
-		});
+      });
+      return imageData;
+    });
+    
 	};
 
 	openPhotoSwipe = (index) => {

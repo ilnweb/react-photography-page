@@ -1,0 +1,71 @@
+$sub-color: grey;
+$main-color: black;
+
+
+
+.group {
+  margin-top: 2rem;
+  width: 100%;
+
+  .form-input{
+    background: none;
+    background-color: #0a0a0c;
+    color: $sub-color;
+    font-size: 20px;
+    padding:10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1.5px solid black;
+    margin-top: 10px;
+    font-family: inherit;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    // &:focus ~ .form-input-label {
+    //   @include shrinkLabel();
+    // }
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.3em;
+  }
+
+  .form-input-label {
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    
+    pointer-events: none;
+    transition: 300ms ease all;
+   
+
+    // &.shrink {
+    //   @include shrinkLabel();
+    // }
+  }
+}
+
+textarea{
+  height:15rem;
+  font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder{
+  opacity: .5;
+  font-size: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent;
+}
