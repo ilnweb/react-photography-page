@@ -1,0 +1,92 @@
+.about {
+  height: 100vh;
+  width: 100%;
+  padding: 9rem 4rem 0 4rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  .letters {
+    font-size: 12.5rem;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.449);
+    z-index: -100;
+    font-weight: 900;
+    top: 5rem;
+    font-weight: 900;
+    font-family: "Exo";
+    transform: translate(-110%);
+    transition: all 2s ease-in-out;
+  }
+
+  .backround{
+    position: absolute;
+    z-index: -101;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #9f9f9f 62%, rgba(45, 35, 35, 0) 50%);
+  }
+
+  &-img {
+    height: 100%;
+    width: 50rem;
+    opacity: 0.99;
+    background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1578492915/HomePage/shadow_zsw6h2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(20%);
+    transition: all .5s;
+    opacity: 0;
+  }
+
+  &-text,
+  &-image-area {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  &-text {
+    align-items: flex-start;
+    color: rgb(37, 35, 35);
+    width: 40%;
+    transform: translateY(10%);
+    transition: all .8s;
+    transition-delay: 1s;
+    opacity: 0;
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      
+      word-spacing: .2rem;
+      text-align: justify;
+
+    }
+
+    h2 {
+      font-weight: 900;
+   
+    }
+  }
+
+  &-image-area {
+    position: relative;
+    width: 60%;
+  }
+
+  &-title {
+    position: absolute;
+    color: white;
+    padding: 3rem 10rem;
+    font-size: 5rem;
+    bottom: 0rem;
+    left: -11rem;
+  }
+
+  .show{
+    transform:translate(0%);
+    opacity: 1;
+  }
+}

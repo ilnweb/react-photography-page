@@ -7,24 +7,25 @@
   &-title{
    margin: 1rem;
     font-weight: 700;
+    font-size: 3.2rem;
   }
 
   &-form{
     flex-direction: column;
     width: 50%;
-    background-image: linear-gradient(to right bottom, #0a0a0cac, #0a0a0c39);
+    background-image: linear-gradient(to  bottom, #0a0a0cd4, #0a0a0c39);
     padding: 2rem;
   }
 
   &-button{
     margin-top: 3rem;
-    background-color:#0a0a0c;
+    background-color:#0a0a0c00;
     width: 10rem;
     height: 3rem;
     color: white;
     border-radius:3px;
     font-family: inherit;
-    border: none;
+    border: .5px solid white;
   }
 
   &-backround{
@@ -37,7 +38,7 @@
     background-size: cover;
     background-position: center;
     // filter: grayscale(1);
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
   }
 

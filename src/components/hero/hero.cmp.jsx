@@ -4,7 +4,9 @@ import './hero.scss';
 
 
 const Hero = () => (
-  <div className="hero"></div>
+  <div className="hero">
+    <div className="hero-img"></div>
+  </div>
 );
 
 

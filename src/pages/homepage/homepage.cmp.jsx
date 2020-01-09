@@ -2,6 +2,7 @@ import React from 'react';
 import './homepage.scss';
 import Hero from '../../components/hero/hero.cmp';
 import ItemHome from '../../components/item-home/item-home.cmp';
+import { FullPage, Slide } from 'react-full-page';
 
 class HomePage extends React.Component {
 	constructor(props) {
@@ -61,18 +62,16 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<div className="fullpage-wrapper">
-				<Hero />
+			<FullPage className="fullpage-wrapper">
+				<Slide>
+					<Hero />
+				</Slide>
 				{this.state.sections.map((item, index) => (
-					<ItemHome
-						key={item.id}
-						item={item}
-						handleWaypoint={this.handleWaypoint}
-						reviel={this.state.sections}
-						index={index}
-					/>
+					<Slide>
+						<ItemHome item={item} handleWaypoint={this.handleWaypoint} reviel={this.state.sections} index={index} />
+					</Slide>
 				))}
-			</div>
+			</FullPage>
 		);
 	}
 }

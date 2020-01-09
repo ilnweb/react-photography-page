@@ -43,6 +43,7 @@ class ContactPage extends React.Component {
       <div className="contact flex-c">
         <div className="contact-backround"></div>
         <h1 className="contact-title">GET IN TOUCH</h1>
+        <div className="contact-info"></div>
 				
         <form className="contact-form flex-c" onSubmit={this.sendEmail}>
           <legend><h2>Fill up the form and I will get back to you!</h2></legend>

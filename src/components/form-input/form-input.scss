@@ -9,7 +9,7 @@ $main-color: black;
 
   .form-input{
     background: none;
-    background-color: #0a0a0c;
+    
     color: $sub-color;
     font-size: 20px;
     padding:10px;
@@ -17,7 +17,7 @@ $main-color: black;
     width: 100%;
     border: none;
     border-radius: 3px;
-    border-bottom: 1.5px solid black;
+    border: .5px solid white;
     margin-top: 10px;
     font-family: inherit;
     cursor: pointer;
