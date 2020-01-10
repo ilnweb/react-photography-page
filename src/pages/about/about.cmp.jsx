@@ -15,18 +15,19 @@ class AboutPage extends React.Component {
 
 	handleWaypoint = () => {
 		this.setState((prevState) => ({
-			revield: !prevState.revield
+			revield:true
 		}));
 	};
 
 	render() {
-		console.log(this.state.revield);
+		
 		return (
 			<div className="about flex-c">
-				<Waypoint onEnter={this.handleWaypoint} />
+				
 				<div className={`letters ${this.state.revield ? 'show' : ''}`}>Photographer.</div>
 				<div className="backround" />
-				<div className={`about-text flex-c ${this.state.revield ? 'show' : ''}`}>
+        <div className={`about-text flex-c ${this.state.revield ? 'show' : ''}`}>
+        <Waypoint onEnter={this.handleWaypoint} />
 					<h1 className="title">About me</h1>
 					<h2>I'm a photographer who loves a challange and exiting projects.</h2>
 					<p>

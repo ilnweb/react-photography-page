@@ -19,7 +19,7 @@
     transition: all 2s ease-in-out;
   }
 
-  .backround{
+  .backround {
     position: absolute;
     z-index: -101;
     top: 0;
@@ -54,10 +54,11 @@
     transition: all .8s;
     transition-delay: 1s;
     opacity: 0;
+
     p {
       margin-top: 1rem;
       font-size: 1.1rem;
-      
+
       word-spacing: .2rem;
       text-align: justify;
 
@@ -65,14 +66,14 @@
 
     h2 {
       font-weight: 900;
-   
+
     }
   }
 
   &-image-area {
     position: relative;
     width: 60%;
-    align-items:flex-end;
+    align-items: flex-end;
   }
 
   &-title {
@@ -84,58 +85,82 @@
     left: -11rem;
   }
 
-  .about-social{
+  .about-social {
     margin-top: 2rem;
   }
-  .react-icons{
-    margin-left:1rem;
+
+  .react-icons {
+    margin-left: 1rem;
     width: 2rem;
     height: 2rem;
     vertical-align: middle;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     color: #343333;
   }
 
-  .link-button{
+  .link-button {
     border: 1px solid #343333;
     border-radius: 2px;
     color: #525050;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
-  .show{
-    transform:translate(0%);
+  .show {
+    transform: translate(0%);
     opacity: 1;
   }
 }
 
 
-@media (max-width: 1024px) {
-  .about{
+@media (max-width: 1025px) {
+  .about {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: auto;
+
     .letters {
       font-size: 7rem;
     }
 
-  &-text,
-  &-image-area {
-    width: 100%;
-    flex-direction: column;
-    
-  }
+    &-text,
+    &-image-area {
+      width: 100%;
+      flex-direction: column;
 
+    }
+
+    .about-text {
+      margin: 2rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: #525050;
+    }
+
+    &-img {
+      box-shadow: 0 4px 15px -15px rgb(86, 86, 86);
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 600px) {
+  .about {
+    .letters {
+      font-size: 4rem;
+    }
+  }
   .about-text {
-    margin-top: 1rem;
+    margin: 2rem;
     justify-content: flex-start;
     align-items: flex-start;
     color: #525050;
   }
 
-  &-img {
-    box-shadow: 0 4px 15px -15px rgb(86, 86, 86);
-    width: 100%;
-  }
+  .title {
+    
+    font-size: 4rem;
+  
   }
 }
