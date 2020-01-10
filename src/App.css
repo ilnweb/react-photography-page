@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  
 }
 /* html{
   font-size: 62.5%;
@@ -20,7 +21,7 @@ body{
   font-family: "Oxygen" , sans-serif;
   font-weight: 300;
   box-sizing: border-box;
-  font-size: 5rem;
+  
 }
 
 h1{
@@ -49,4 +50,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 background-color: darkgrey;
 outline: 1px solid slategrey;
+}
+
+@media (max-width: 800px) {
+
+html{
+  font-size: 14px;
+}
 }

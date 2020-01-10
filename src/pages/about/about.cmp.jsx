@@ -1,28 +1,29 @@
 import React from 'react';
 import './about.scss';
 import { Waypoint } from 'react-waypoint';
+import { Link } from 'react-router-dom';
+import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 class AboutPage extends React.Component {
 	constructor() {
 		super();
-    this.state = {
-      revield:false
-    };
-  }
-  
-  handleWaypoint = () => {
-    this.setState(prevState => ({
-      revield: !prevState.revield
-    }));
-   
-  }
+		this.state = {
+			revield: false
+		};
+	}
 
+	handleWaypoint = () => {
+		this.setState((prevState) => ({
+			revield: !prevState.revield
+		}));
+	};
 
-  render() {
-    console.log(this.state.revield);
+	render() {
+		console.log(this.state.revield);
 		return (
 			<div className="about flex-c">
-				<Waypoint onEnter={this.handleWaypoint} onLeave={this.handleWaypoint} />
+				<Waypoint onEnter={this.handleWaypoint} />
 				<div className={`letters ${this.state.revield ? 'show' : ''}`}>Photographer.</div>
 				<div className="backround" />
 				<div className={`about-text flex-c ${this.state.revield ? 'show' : ''}`}>
@@ -33,9 +34,24 @@ class AboutPage extends React.Component {
 						me full controll of the scenery and opportunity for more exiting pictures. I learned by observing the styles
 						and techniques of world famous photographers.{' '}
 					</p>
+					<div className="about-social flex-c">
+						<Link className="link-button" to="/contact">
+							Contact me
+						</Link>
+						<a href="https://www.instagram.com/iliyan.tsachev/" target="blank">
+							<FaInstagram className="react-icons" />
+						</a>
+						<a href="https://www.facebook.com/itsachevphotography/?modal=admin_todo_tour" target="blank">
+							<FaFacebookSquare className="react-icons" />
+						</a>
+					</div>
 				</div>
 				<div className="about-image-area flex-c">
-					<div className={`about-img ${this.state.revield ? 'show' : ''}`} />
+					<img
+						src="https://res.cloudinary.com/ilnphotography/image/upload/v1578492915/HomePage/shadow_zsw6h2.png"
+						className={`about-img ${this.state.revield ? 'show' : ''}`}
+						alt="iliyan-portrait"
+					/>
 				</div>
 			</div>
 		);

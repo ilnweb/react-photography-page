@@ -67,7 +67,7 @@ class HomePage extends React.Component {
 					<Hero />
 				</Slide>
 				{this.state.sections.map((item, index) => (
-					<Slide>
+					<Slide key={item.id}>
 						<ItemHome item={item} handleWaypoint={this.handleWaypoint} reviel={this.state.sections} index={index} />
 					</Slide>
 				))}

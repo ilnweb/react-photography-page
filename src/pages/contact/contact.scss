@@ -1,34 +1,76 @@
-.contact{
-  padding: 7rem;
+$grey-primary: grey;
+$grey-secondary:rgb(160, 160, 160);
+
+.contact {
+  padding: 7em 7rem 3rem 7rem;
   flex-direction: column;
   position: relative;
-  
+  height: 100vh;
+  color: grey;
+  background: #191a1d;
+  mix-blend-mode: multiply;
 
-  &-title{
-   margin: 1rem;
+  &-title {
+    margin-bottom: 2.5rem;
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 4rem;
+    color: $grey-primary;
   }
 
-  &-form{
+  &-content {
+    width: 100%;
+    background: #181819ee;
+    border-radius: 3px;
+  }
+
+  .react-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+  }
+
+  &-form {
     flex-direction: column;
-    width: 50%;
-    background-image: linear-gradient(to  bottom, #0a0a0cd4, #0a0a0c39);
-    padding: 2rem;
+    width: 60%;
+    padding: 3rem 4rem;
   }
 
-  &-button{
-    margin-top: 3rem;
-    background-color:#0a0a0c00;
+  &-left {
+    height: 100%;
+    width: 50%;
+    border-right: .5px solid $grey-primary;
+    font-size: 1.5rem;
+    padding: 5rem 3rem;
+
+  }
+
+  &-details {
+    padding: 1rem;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: $grey-secondary;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  &-button {
+    margin-top: 2rem;
+    background-color: #0a0a0c00;
     width: 10rem;
     height: 3rem;
-    color: white;
-    border-radius:3px;
+    color: grey;
+    border-radius: 3px;
     font-family: inherit;
-    border: .5px solid white;
+    border: .5px solid $grey-primary;
+    cursor: pointer;
   }
 
-  &-backround{
+  &-backround {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,4 +84,37 @@
     z-index: -1;
   }
 
+}
+
+@media (max-width: 1024px) {
+  .contact {
+   
+    &-content {
+      flex-direction: column;
+    }
+
+    &-left {
+      border: none;
+      width: 100%;
+    }
+
+    &-form {
+      flex-direction: column;
+      width: 100%;
+      padding: 3rem 4rem;
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 5em 1rem 3rem 1rem;
+    height: auto;
+
+    &-left, &-form {
+      height: auto;
+      padding: 2rem 1.5rem;
+    }
+  }
 }

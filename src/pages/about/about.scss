@@ -31,9 +31,7 @@
 
   &-img {
     height: 100%;
-    width: 50rem;
     opacity: 0.99;
-    background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1578492915/HomePage/shadow_zsw6h2.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,6 +72,7 @@
   &-image-area {
     position: relative;
     width: 60%;
+    align-items:flex-end;
   }
 
   &-title {
@@ -85,8 +84,58 @@
     left: -11rem;
   }
 
+  .about-social{
+    margin-top: 2rem;
+  }
+  .react-icons{
+    margin-left:1rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    justify-content: center;
+    align-items:center;
+    color: #343333;
+  }
+
+  .link-button{
+    border: 1px solid #343333;
+    border-radius: 2px;
+    color: #525050;
+    padding:0.5rem 1rem;
+  }
+
   .show{
     transform:translate(0%);
     opacity: 1;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .about{
+    flex-direction: column-reverse;
+    height: 100vh;
+    .letters {
+      font-size: 7rem;
+    }
+
+  &-text,
+  &-image-area {
+    width: 100%;
+    flex-direction: column;
+    
+  }
+
+  .about-text {
+    margin-top: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #525050;
+  }
+
+  &-img {
+    box-shadow: 0 4px 15px -15px rgb(86, 86, 86);
+    width: 100%;
+  }
   }
 }
