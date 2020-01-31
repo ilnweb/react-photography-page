@@ -1,10 +1,11 @@
 <h1>React - photography-page </h1>
 
-This is a personal project in which I created a simple photography page using Create-react-app.
+<p>This is a personal portfolio project in which I created a simple photography page using Create-react-app.</p>
 
-<a href="http://iliyantsachev-live.herokuapp.com/"><h2>Check out project</h2></a>
+<a href="http://iliyantsachev-live.herokuapp.com/"  target="_blank"><h2>Check out project</h2></a>
 
 <h4>In this project I use:</h4>
+
 <ul>
 
 <li>react-full-page - For the front page slider</li>
