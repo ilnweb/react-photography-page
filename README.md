@@ -1,4 +1,4 @@
-React - photography-page 
+<h1>React - photography-page </h1>
 
 This is a personal project in which I created a simple photography page using Create-react-app.
 
