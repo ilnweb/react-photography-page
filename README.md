@@ -2,7 +2,7 @@
 
 <p>This is a personal portfolio project in which I created a simple photography SPA using Create-react-app.</p>
 
-<a href="http://iliyantsachev-live.herokuapp.com/"  target="_blank"><h2>Check out project on Heroku</h2></a>
+<a href="http://iliyantsachev-live.herokuapp.com/"  target="blank"><h2>Check out project on Heroku</h2></a>
 
 <h4>In this project I use:</h4>
 
