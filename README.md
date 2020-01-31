@@ -1,16 +1,19 @@
 <h1>React - photography-page </h1>
 
-<p>This is a personal portfolio project in which I created a simple photography page using Create-react-app.</p>
+<p>This is a personal portfolio project in which I created a simple photography SPA using Create-react-app.</p>
 
-<a href="http://iliyantsachev-live.herokuapp.com/"  target="_blank"><h2>Check out project</h2></a>
+<a href="http://iliyantsachev-live.herokuapp.com/"  target="_blank"><h2>Check out project on Heroku</h2></a>
 
 <h4>In this project I use:</h4>
 
 <ul>
 
-<li>react-full-page - For the front page slider</li>
-<li>react-waypoint - to trigger an even when an element is in view</li>
-<li>Cloudinary API - I hosted the images in Cloudinary and dymicaly call them by tag using only one component.</li>
-<li>EmailJS API - I integrated EmailJs and used the mailing servive from my domaein so I can send emails when a form is submited. </li>
+<li>react-full-page - Used in the front page slider</li>
+<li>react-waypoint - Used accros the app to trigger an even when an element is in view</li>
+<li>react-photoswipe - </li>
+<li>Cloudinary API - I hosted the images in Cloudinary and using only one component I dymicaly call them by tag .</li>
+<li>EmailJS API - I integrated EmailJs and used the mailing servive from my domain so I can send emails to my personal email when a form is submited.</li>
 
 </ul>
+
+<p>Hope you like it!</p>
