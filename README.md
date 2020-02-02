@@ -16,4 +16,4 @@
 
 </ul>
 
-<h2>Hope you like it!</h2>
+<h2></h2>
