@@ -136,13 +136,17 @@
 
     .title,
     .title-border {
+      font-size:5rem;
       left: 1rem;
-      top:40%;
+      top:42%;
+      color:white;
+      -webkit-text-stroke-color: white;
     }
 
     .container-subtitile{
       left: 1.5rem;
       top:56%
+      
     }
   }
 }

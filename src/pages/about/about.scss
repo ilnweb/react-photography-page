@@ -126,19 +126,28 @@
     &-image-area {
       width: 100%;
       flex-direction: column;
-
+      
     }
 
     .about-text {
       margin: 2rem;
       justify-content: flex-start;
       align-items: flex-start;
-      color: #525050;
+      color: #ffffff;
     }
 
     &-img {
       box-shadow: 0 4px 15px -15px rgb(86, 86, 86);
       width: 100%;
+    }
+
+    .link-button {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .react-icons {
+      color: #ffffff;
     }
   }
 }

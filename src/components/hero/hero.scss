@@ -5,14 +5,14 @@
 
   &-img {
     background-size: cover;
-    background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1577467056/LifeStyle/WEB-54_gaw7b9.jpg");
+    background-image: url(https://res.cloudinary.com/ilnphotography/image/upload/v1580835537/HomePage/front_kor2i0.jpg);
     background-position:center;
-    filter: grayscale(1);
+    
     width: 100%;
     height: 100%;
     // -webkit-transform: scale(2);
     // transform: scale(2);
-    opacity: 0.3;
+    
     -webkit-animation: heroAnim 15s ease 1s forwards;
     animation: heroAnim 15s ease 1s forwards;
   }
