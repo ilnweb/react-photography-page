@@ -1,6 +1,6 @@
 <h1>React - photography-page </h1>
 
-<p>This is a personal portfolio project in which I created a simple photography SPA using Create-react-app.</p>
+<p>This is a personal portfolio project in which I created a simple photography application using Create-react-app.</p>
 
 <a href="http://iliyantsachev-live.herokuapp.com/"  target="blank"><h2>Check out project on Heroku</h2></a>
 
