@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/30ab142f-1906-4658-af50-a13f4462ac05/deploy-status)](https://app.netlify.com/sites/iliyan-tsachev-live/deploys)
 
-<p>This is a personal portfolio project in which I created a simple photography application using Create-react-app.</p>
+<p>This is a personal portfolio project in which I created a simple photography web-app using Create-react-app.</p>
 
-<a href="http://iliyantsachev-live.herokuapp.com/"  target="blank"><h2>Check out project on Heroku</h2></a>
+<a href="https://iliyan-tsachev-live.netlify.com/"  target="blank"><h2>Check out project on Netlify</h2></a>
 
 <h4>In this project I use:</h4>
 
