@@ -5,35 +5,14 @@
 
   &-img {
     background-size: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-image: url(https://res.cloudinary.com/ilnphotography/image/upload/v1580835537/HomePage/front_kor2i0.jpg);
-=======
     background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1580835537/HomePage/front_kor2i0.jpg");
->>>>>>> 8a4ee5dfa3c3b526aa6dff6ec4cf12f229dbe34a
-=======
-    background-image: url("https://res.cloudinary.com/ilnphotography/image/upload/v1580835537/HomePage/v1577467056/LifeStyle/WEB-54_gaw7b9.jpg");
->>>>>>> f613821da382e022d559d94f37d5fe05c50f2868
     background-position:center;
     
     width: 100%;
     height: 100%;
-    // -webkit-transform: scale(2);
-    // transform: scale(2);
     
     -webkit-animation: heroAnim 15s ease 1s forwards;
     animation: heroAnim 15s ease 1s forwards;
   }
 
-  // @keyframes heroAnim {
-  //   from {
-  //     transform: scale(2);
-  //     -webkit-transform: scale(2);
-  //   }
-
-  //   to {
-  //     transform: scale(1);
-  //     -webkit-transform: scale(1);
-  //   }
-  // }
 }
